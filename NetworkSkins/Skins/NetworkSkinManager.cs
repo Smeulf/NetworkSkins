@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using ColossalFramework.IO;
+﻿using ColossalFramework.IO;
 using ColossalFramework.UI;
 using NetworkSkins.API;
 using NetworkSkins.Legacy;
@@ -9,6 +6,9 @@ using NetworkSkins.Net;
 using NetworkSkins.Persistence;
 using NetworkSkins.Skins.Modifiers;
 using NetworkSkins.Skins.Serialization;
+using System;
+using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 namespace NetworkSkins.Skins

@@ -1,9 +1,8 @@
-﻿using System;
-using System.Reflection;
-using ColossalFramework.Math;
+﻿using ColossalFramework.Math;
 using HarmonyLib;
 using NetworkSkins.Patches.NetTool;
 using NetworkSkins.Skins;
+using System.Reflection;
 using UnityEngine;
 
 // ReSharper disable InconsistentNaming
@@ -25,9 +24,11 @@ namespace NetworkSkins.Patches.NetManager
 
             if(NetToolMoveMiddleNodePatch.CopySkin) {
                 NetworkSkinManager.instance.PasteSegmentSkin(segment, NetToolMoveMiddleNodePatch.Skin);
-            } else if(NetToolSplitSegmentPatch.CopySkin) {
+            } 
+            else if(NetToolSplitSegmentPatch.CopySkin) {
                 NetworkSkinManager.instance.PasteSegmentSkin(segment, NetToolSplitSegmentPatch.Skin);
-            } else if(NetToolCreateNode0Patch.Called) {
+            } 
+            else if(NetToolCreateNode0Patch.Called) {
                 // only when it is called from nettool.
                 NetworkSkinManager.instance.OnSegmentPlaced(segment);
             }

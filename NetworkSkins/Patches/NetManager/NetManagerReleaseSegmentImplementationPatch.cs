@@ -1,7 +1,6 @@
-﻿using System;
-using System.Reflection;
-using HarmonyLib;
+﻿using HarmonyLib;
 using NetworkSkins.Skins;
+using System.Reflection;
 // ReSharper disable InconsistentNaming
 
 

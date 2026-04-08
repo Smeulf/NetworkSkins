@@ -1,4 +1,5 @@
-﻿namespace NetworkSkins.API {
+﻿namespace NetworkSkins.API
+{
     using ColossalFramework.UI;
     using NetworkSkins.Skins;
     using NetworkSkins.GUI;

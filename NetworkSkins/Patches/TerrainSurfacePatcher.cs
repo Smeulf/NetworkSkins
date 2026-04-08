@@ -1,5 +1,5 @@
-﻿using System;
-using NetworkSkins.Skins;
+﻿using NetworkSkins.Skins;
+using System;
 
 namespace NetworkSkins.Patches
 {

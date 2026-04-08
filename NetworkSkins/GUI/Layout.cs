@@ -1,7 +1,6 @@
 ﻿using ColossalFramework.UI;
 using NetworkSkins.GUI.Abstraction;
 using System;
-using System.Drawing;
 using UnityEngine;
 
 namespace NetworkSkins.GUI

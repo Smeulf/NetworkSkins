@@ -1,8 +1,7 @@
-﻿using System;
+﻿using ColossalFramework.Globalization;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
-using ColossalFramework.Globalization;
 
 namespace NetworkSkins.TranslationFramework
 {

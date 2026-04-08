@@ -1,5 +1,4 @@
 ﻿using ColossalFramework.IO;
-using System;
 
 namespace NetworkSkins.Skins.Modifiers {
     public class CustomDataCollectionModifier : NetworkSkinModifier {

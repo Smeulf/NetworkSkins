@@ -1,10 +1,10 @@
-﻿namespace NetworkSkins.Skins {
+﻿namespace NetworkSkins.Skins
+{
     using NetworkSkins.API;
+    using NetworkSkins.Persistence;
     using System;
     using System.Collections.Generic;
     using System.Linq;
-
-    using NetworkSkins.Persistence;
     using UnityEngine;
 
     public class CustomDataDTO : ICloneable {

@@ -1,4 +1,5 @@
-namespace NetworkSkins.Patches {
+namespace NetworkSkins.Patches
+{
     using HarmonyLib;
     using System;
     using System.Collections.Generic;
@@ -7,7 +8,8 @@ namespace NetworkSkins.Patches {
     using System.Reflection;
     using System.Reflection.Emit;
 
-    public class HarmonyPatch2 : HarmonyLib.HarmonyPatch {
+    public class HarmonyPatch2 : HarmonyPatch
+    {
         public HarmonyPatch2(Type delcaringType, Type delegateType, bool instance = false){
             info.declaringType = delcaringType;
             info.methodName = delegateType.Name;

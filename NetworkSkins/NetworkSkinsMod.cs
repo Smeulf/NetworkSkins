@@ -1,6 +1,7 @@
 ﻿using CitiesHarmony.API;
 using ColossalFramework.UI;
 using ICities;
+using NetworkSkins.API;
 using NetworkSkins.GUI;
 using NetworkSkins.Locale;
 using NetworkSkins.Patches;
@@ -11,9 +12,8 @@ using System;
 using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
-using static UnityEngine.Object;
-using NetworkSkins.API;
 using UnityEngine.SceneManagement;
+using static UnityEngine.Object;
 
 namespace NetworkSkins
 {

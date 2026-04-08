@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using ColossalFramework.IO;
+﻿using ColossalFramework.IO;
 using NetworkSkins.Net;
 using NetworkSkins.Skins;
 using NetworkSkins.Skins.Modifiers;
 using NetworkSkins.Skins.Serialization;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using UnityEngine;
 
 namespace NetworkSkins.Tests

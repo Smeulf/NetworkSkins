@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using NetworkSkins.GUI.Abstraction;
+﻿using NetworkSkins.GUI.Abstraction;
 using NetworkSkins.Net;
 using NetworkSkins.Skins;
 using NetworkSkins.Skins.Modifiers;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace NetworkSkins.GUI.Catenaries
 {

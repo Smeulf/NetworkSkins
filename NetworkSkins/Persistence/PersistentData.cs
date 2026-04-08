@@ -1,5 +1,4 @@
-﻿using ColossalFramework.UI;
-using NetworkSkins.GUI;
+﻿using NetworkSkins.GUI;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;

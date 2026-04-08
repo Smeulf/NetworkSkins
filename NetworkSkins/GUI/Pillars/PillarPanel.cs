@@ -1,7 +1,6 @@
-﻿using System.Linq;
-using NetworkSkins.GUI.Abstraction;
+﻿using NetworkSkins.GUI.Abstraction;
 using NetworkSkins.Net;
-using UnityEngine;
+using System.Linq;
 
 namespace NetworkSkins.GUI.Pillars
 {

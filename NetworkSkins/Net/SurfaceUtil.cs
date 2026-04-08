@@ -1,6 +1,4 @@
-﻿using NetworkSkins.Skins.Modifiers;
-
-namespace NetworkSkins.Net
+﻿namespace NetworkSkins.Net
 {
     // TODO rename to NetTerrainSurfaceUtil
     public class SurfaceUtil

@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using ColossalFramework.UI;
+﻿using ColossalFramework.UI;
 using NetworkSkins.GUI.Abstraction;
 using NetworkSkins.Locale;
 using NetworkSkins.TranslationFramework;
+using System.Collections.Generic;
 using UnityEngine;
 using static NetworkSkins.Persistence.PersistenceService;
 

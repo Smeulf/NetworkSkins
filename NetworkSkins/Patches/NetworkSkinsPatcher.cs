@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using HarmonyLib;
+﻿using HarmonyLib;
+using UnityEngine;
 
 namespace NetworkSkins.Patches {
     public static class NetworkSkinsPatcher {

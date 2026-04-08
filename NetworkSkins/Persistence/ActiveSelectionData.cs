@@ -1,9 +1,9 @@
-﻿using System;
+﻿using ColossalFramework.IO;
+using ICities;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using ColossalFramework.IO;
-using ICities;
 using UnityEngine;
 
 namespace NetworkSkins.Persistence

@@ -1,5 +1,4 @@
 ﻿using System;
-//using NetworkSkins.Data;
 using UnityEngine;
 
 namespace NetworkSkins.Net

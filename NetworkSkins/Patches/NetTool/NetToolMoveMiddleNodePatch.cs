@@ -1,6 +1,6 @@
 ﻿using HarmonyLib;
-using NetworkSkins.Skins;
 using NetworkSkins.Net;
+using NetworkSkins.Skins;
 
 namespace NetworkSkins.Patches.NetTool {
     [HarmonyPatch(typeof(global::NetTool), "MoveMiddleNode")]

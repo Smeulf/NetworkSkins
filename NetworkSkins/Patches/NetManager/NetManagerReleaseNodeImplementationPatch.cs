@@ -1,7 +1,7 @@
-﻿using System;
-using System.Reflection;
-using HarmonyLib;
+﻿using HarmonyLib;
 using NetworkSkins.Skins;
+using System;
+using System.Reflection;
 // ReSharper disable InconsistentNaming
 
 // TODO maybe use ManualActivation, ManualDeactivation, AfterSplitOrMove instead?

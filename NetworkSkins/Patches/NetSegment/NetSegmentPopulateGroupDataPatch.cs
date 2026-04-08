@@ -1,8 +1,8 @@
-﻿using System;
+﻿using HarmonyLib;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
-using HarmonyLib;
 using UnityEngine;
 
 namespace NetworkSkins.Patches.NetSegment

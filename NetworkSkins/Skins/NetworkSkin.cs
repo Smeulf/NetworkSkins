@@ -1,11 +1,11 @@
-﻿using System;
+﻿using ColossalFramework.IO;
+using NetworkSkins.Net;
+using NetworkSkins.Skins.Serialization;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Reflection;
-using ColossalFramework.IO;
-using NetworkSkins.Net;
-using NetworkSkins.Skins.Serialization;
 using UnityEngine;
 // ReSharper disable InconsistentNaming
 

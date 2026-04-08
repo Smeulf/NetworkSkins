@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-using NetworkSkins.GUI.Abstraction;
+﻿using NetworkSkins.GUI.Abstraction;
 using NetworkSkins.Net;
 using NetworkSkins.Persistence;
 using NetworkSkins.Skins;
 using NetworkSkins.Skins.Modifiers;
-using UnityEngine;
+using System.Collections.Generic;
 
 namespace NetworkSkins.GUI.Trees
 {

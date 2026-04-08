@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-using NetworkSkins.Persistence;
+﻿using NetworkSkins.Persistence;
 using NetworkSkins.Skins;
+using System.Collections.Generic;
 
 namespace NetworkSkins.GUI.Abstraction
 {

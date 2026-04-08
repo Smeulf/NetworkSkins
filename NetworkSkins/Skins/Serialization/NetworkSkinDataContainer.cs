@@ -1,6 +1,6 @@
-﻿using System;
+﻿using ColossalFramework.IO;
+using System;
 using System.Collections.Generic;
-using ColossalFramework.IO;
 using UnityEngine;
 
 namespace NetworkSkins.Skins.Serialization

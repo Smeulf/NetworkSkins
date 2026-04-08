@@ -1,6 +1,6 @@
-﻿using ColossalFramework.IO;
+﻿using ColossalFramework;
+using ColossalFramework.IO;
 using System;
-using ColossalFramework;
 using UnityEngine;
 
 namespace NetworkSkins.Persistence

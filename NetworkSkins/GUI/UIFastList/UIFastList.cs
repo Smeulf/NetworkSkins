@@ -1,5 +1,5 @@
-﻿using System;
-using ColossalFramework.UI;
+﻿using ColossalFramework.UI;
+using System;
 using UnityEngine;
 
 namespace NetworkSkins.GUI.UIFastList
