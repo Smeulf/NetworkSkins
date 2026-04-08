@@ -44,7 +44,7 @@ namespace NetworkSkins.Patches.NetSegment
             for (; index < codes.Count; index++)
             {
                 // IL_0003: call instance class NetInfo NetSegment::get_Info()
-                if (codes[index].opcode == OpCodes.Call && codes[index].operand == netSegmentInfoGetter && TranspilerUtils.IsStLoc(codes[index + 1]))
+                if (codes[index].opcode == OpCodes.Call && codes[index].operand == netSegmentInfoGetter && codes[index + 1].IsStloc())//TranspilerUtils.IsStLoc(codes[index + 1]))
                 {
                     infoLocalVarLdloc = TranspilerUtils.BuildLdLocFromStLoc(codes[index + 1]);
                     index += 2;

@@ -119,7 +119,7 @@ namespace NetworkSkins.Patches
             }
         }
 
-
+        /*
         [Obsolete("use harmony extension instead")]
         public static bool IsLdLoc(CodeInstruction instruction) {
             return (instruction.opcode == OpCodes.Ldloc_0 || instruction.opcode == OpCodes.Ldloc_1 ||
@@ -127,7 +127,9 @@ namespace NetworkSkins.Patches
                     || instruction.opcode == OpCodes.Ldloc_S || instruction.opcode == OpCodes.Ldloc
                 );
         }
+        */
 
+        /*
         [Obsolete("use harmony extension instead")]
         public static bool IsStLoc(CodeInstruction instruction) {
             return (instruction.opcode == OpCodes.Stloc_0 || instruction.opcode == OpCodes.Stloc_1 ||
@@ -135,6 +137,7 @@ namespace NetworkSkins.Patches
                     || instruction.opcode == OpCodes.Stloc_S || instruction.opcode == OpCodes.Stloc
                 );
         }
+        */
 
         /// <summary>
         /// Get the instruction to load the variable which is stored here.

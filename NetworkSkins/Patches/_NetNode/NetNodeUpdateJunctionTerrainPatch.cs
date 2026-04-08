@@ -52,14 +52,14 @@ public static class NetNodeUpdateJunctionTerrainPatch
         for (; index < codes.Count; index++)
         {
             if (codes[index].opcode == OpCodes.Shr
-                && TranspilerUtils.IsLdLoc(codes[index - 3])
-                && TranspilerUtils.IsLdLoc(codes[index - 2])
+                && codes[index - 3].IsLdloc() //TranspilerUtils.IsLdLoc(codes[index - 3])
+                && codes[index - 2].IsLdloc() //TranspilerUtils.IsLdLoc(codes[index - 2])
                 && codes[index - 1].opcode == OpCodes.Ldc_I4_1
                 && codes[index + 1].opcode == OpCodes.Bgt
-                && TranspilerUtils.IsLdLoc(codes[index + 2])
+                && codes[index + 2].IsLdloc() //TranspilerUtils.IsLdLoc(codes[index + 2])
                 && codes[index + 3].opcode == OpCodes.Br
-                && TranspilerUtils.IsLdLoc(codes[index + 4])
-                && TranspilerUtils.IsStLoc(codes[index + 5]))
+                && codes[index + 4].IsLdloc() //TranspilerUtils.IsLdLoc(codes[index + 4])
+                && codes[index + 5].IsStloc()) //TranspilerUtils.IsStLoc(codes[index + 5]))
             {
                 TranspilerUtils.LogDebug("Found NetInfo netInfo2 = (num14 > num13 >> 1) ? netInfo : info4;");
                 num14LocalVarLdLoc = codes[index - 3].Clone();
@@ -237,7 +237,8 @@ public static class NetNodeUpdateJunctionTerrainPatch
 
     private static CodeInstruction FindSegment7LocalVar(List<CodeInstruction> codes, CodeInstruction info4LocalVarStLoc, ref int index, int endIndex)
     {
-        if (!TranspilerUtils.IsStLoc(info4LocalVarStLoc))
+        //if (!TranspilerUtils.IsStLoc(info4LocalVarStLoc))
+        if (!info4LocalVarStLoc.IsStloc())
         {
             Debug.LogError("info4LocalVarStLoc is not stloc! Cancelling transpiler!");
             return null;
@@ -246,8 +247,9 @@ public static class NetNodeUpdateJunctionTerrainPatch
         {
             if (TranspilerUtils.IsSameInstruction(codes[index], info4LocalVarStLoc))
             {
-                if (TranspilerUtils.IsLdLoc(codes[index - 6]))
-                    return codes[index - 6].Clone();
+                //if (TranspilerUtils.IsLdLoc(codes[index - 6]))
+                if (codes[index - 6].IsLdloc())
+                        return codes[index - 6].Clone();
             }
         }
         Debug.LogError("Unable to find segment7. Cancelling transpiler!");
@@ -256,7 +258,8 @@ public static class NetNodeUpdateJunctionTerrainPatch
 
     private static CodeInstruction FindNum6LocalVar(List<CodeInstruction> codes, CodeInstruction netInfoLocalVarStLoc, ref int index, int endIndex)
     {
-        if (!TranspilerUtils.IsStLoc(netInfoLocalVarStLoc))
+        //if (!TranspilerUtils.IsStLoc(netInfoLocalVarStLoc))
+        if (!netInfoLocalVarStLoc.IsStloc())
         {
             Debug.LogError("netInfoLocalVarStLoc is not stloc! Cancelling transpiler!");
             return null;
@@ -265,7 +268,8 @@ public static class NetNodeUpdateJunctionTerrainPatch
         {
             if (TranspilerUtils.IsSameInstruction(codes[index], netInfoLocalVarStLoc))
             {
-                if (TranspilerUtils.IsLdLoc(codes[index - 6]))
+                //if (TranspilerUtils.IsLdLoc(codes[index - 6]))
+                if (codes[index - 6].IsLdloc())
                     return codes[index - 6].Clone();
             }
         }
