@@ -6,6 +6,7 @@ using NetworkSkins.Net;
 using NetworkSkins.Persistence;
 using NetworkSkins.Skins;
 using NetworkSkins.Skins.Modifiers;
+using UnityEngine;
 
 namespace NetworkSkins.GUI.RoadDecoration
 {
@@ -41,12 +42,16 @@ namespace NetworkSkins.GUI.RoadDecoration
         {
             try
             {
-                var assembly = Assembly.Load("HideCrosswalks");
+                var assembly = Assembly.Load("HideCrosswalksRenewed");
                 if (assembly == null) return null;
 
-                var method = assembly.GetType("HideCrosswalks.NetInfoExt")?
+                var method = assembly.GetType("HideCrosswalksRenewed.NetInfoExt")?
                     .GetMethod("GetCanHideMarkings", BindingFlags.Static | BindingFlags.Public);
-                if (method != null) return method;
+                if (method != null)
+                {
+                    Debug.Log("Found HideCrosswalksRenewed");
+                    return method;
+                }
 
                 return assembly.GetType("HideTMPECrosswalks.Utils.PrefabUtils")?
                     .GetMethod("CanHideMarkings", BindingFlags.Static | BindingFlags.Public);
